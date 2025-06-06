@@ -16,16 +16,12 @@
                     </p>
                 </div>
             </div>
-
-            <!-- Video + botón de audio -->
             <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fCT1vTHwdVY?si=o4nZ4N-KTLqQQ2OX" 
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                         encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-                
-                <!-- Botón que activa el audio -->
                 <div style="margin-top: 10px;">
                     <button type="button" class="btn btn-success" onclick="document.getElementById('audioGato').play();">
                         Purrrrrr
@@ -37,7 +33,6 @@
                 </div>
             </div>
         </div>
-
         <footer th:replace="~{layout/plantilla :: footer}"/>
     </body>
 </html>
