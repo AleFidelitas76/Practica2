@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        <div style="display: flex; gap: 20px; padding: 20px;">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/pecse.jpg" class="card-img-top" alt="Perro Golden Retriever">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Los peces de pecera son mascotas tranquilas y visualmente relajantes. Requieren un acuario con filtración adecuada, temperatura controlada y un ambiente limpio. Especies como los goldfish, guppies y bettas son populares por su colorido y fácil mantenimiento. Observarlos reduce el estrés y mejora la concentración.
+                        </p>
+                    </div>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EIepBTRv-oY?si=6aexaQfKyxjhQPle" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3>Ubicación de tienda de comida en Costa Rica</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62881.954344369944!2d-84.1838731513672!3d9.923784100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fcb146c17bc5%3A0xb14d919d0093bb08!2sAcuario%20Oranda!5e0!3m2!1sen!2scr!4v1749210870526!5m2!1sen!2scr" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </body>
+</html>

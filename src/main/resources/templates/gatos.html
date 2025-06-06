@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+
+        <div style="display: flex; gap: 20px; padding: 20px;">
+            <!-- Card de gato -->
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2F0b3xlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Gato doméstico">
+                <div class="card-body">
+                    <p class="card-text">
+                        Los gatos son mascotas independientes, curiosas y muy limpias. Disfrutan del juego, el descanso y la exploración. Son ideales para espacios pequeños y se adaptan fácilmente a la vida en interiores. Aunque disfrutan de su independencia, también crean lazos afectivos fuertes con sus dueños.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video + botón de audio -->
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fCT1vTHwdVY?si=o4nZ4N-KTLqQQ2OX" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                
+                <!-- Botón que activa el audio -->
+                <div style="margin-top: 10px;">
+                    <button type="button" class="btn btn-success" onclick="document.getElementById('audioGato').play();">
+                        Purrrrrr
+                    </button>
+                    <audio id="audioGato">
+                        <source src="audios/real-cat-purring-sound-354510.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>

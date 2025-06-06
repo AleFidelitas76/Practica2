@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        <div style="display: flex; gap: 20px; padding: 20px;">
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.istockphoto.com/id/1354854276/es/foto/serpiente-hognose-occidental-sobre-un-fondo-blanco.jpg?s=612x612&w=0&k=20&c=C2TCGMCN3p1oyx-Mqu5TTdzG7nzk0Gmq7lr3EPaKPjI=" class="card-img-top" alt="Perro Golden Retriever">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Las serpientes como mascotas requieren compromiso y conocimiento. Especies como la serpiente del maíz son dóciles y fáciles de cuidar. Necesitan un terrario seguro con temperatura controlada y alimentación adecuada. Aunque no son para todos, son fascinantes y silenciosas.
+                        </p>
+                    </div>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Otjx5Nkrfn8?si=FWGL5ZQzHuFNYD0C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>

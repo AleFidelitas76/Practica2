@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        <div style="display: flex; gap: 20px; padding: 20px;">
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.tenor.com/XshQbKRGfzYAAAAM/iguana-bored.gif" class="card-img-top" alt="Perro Golden Retriever">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Las iguanas son reptiles tranquilos y herbívoros, ideales para quienes desean una mascota exótica. Requieren un ambiente cálido, luz UVB, y una dieta rica en verduras frescas. Son animales territoriales pero fascinantes por su comportamiento y apariencia.
+                        </p>
+                    </div>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2nQHzz64OZg?si=UKhoOP18v9o_Z8rd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+            </div>
+        </div>
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>

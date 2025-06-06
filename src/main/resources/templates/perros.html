@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        <div style="display: flex; gap: 20px; padding: 20px;">
+            <div class="card" style="width: 18rem;">
+                <img src="https://img.freepik.com/foto-gratis/primer-plano-adorable-golden-retriever_181624-18640.jpg?semt=ais_hybrid&w=740" class="card-img-top" alt="Perro Golden Retriever">
+                <div class="card-body">
+                    <p class="card-text">
+                        Los perros son animales leales, inteligentes y excelentes compañeros. Existen muchas razas con distintas necesidades, pero todos requieren amor, ejercicio y cuidados veterinarios. Son ideales como mascotas y también pueden desempeñar funciones de ayuda, como perros guía o de terapia.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vgXw0H-jhUg?si=qqVaAbGcg2La104r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>

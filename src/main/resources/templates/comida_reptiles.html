@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+
+        <div style="padding: 20px;">
+            <h2>Comida Favorita de Reptiles Domésticos</h2>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.botanical-online.com/wp-content/uploads/raton-domestico-commi-360x328.jpg" class="card-img-top" alt="Ratón para serpiente">
+                        <div class="card-body">
+                            <h5 class="card-title">Ratoncitos</h5>
+                            <p class="card-text">
+                                Las serpientes carnívoras como la del maíz suelen alimentarse de ratones descongelados. Es su fuente natural de proteínas.
+                            </p>
+                        </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i5.walmartimages.com/seo/Fluker-s-Gourmet-Canned-Grasshoppers-1-2-Oz_eeffc975-26ee-4c29-bd68-493c2f6b1c69.191c0193d3c02644bc8136ac9f868733.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" class="card-img-top" alt="Grillo para gecko">
+                        <div class="card-body">
+                            <h5 class="card-title">Grillos y cucarachas</h5>
+                            <p class="card-text">
+                                Reptiles pequeños como geckos o camaleones disfrutan de grillos, cucarachas dubia o gusanos vivos.
+                            </p>
+                        </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://m.media-amazon.com/images/I/816PQ6XdAiL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Verduras para iguanas">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegetales frescos</h5>
+                            <p class="card-text">
+                                Iguanas y tortugas disfrutan de hojas verdes, calabacines, zanahorias y frutas ocasionales como mango o fresa.
+                            </p>
+                        </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://tetra.la/wp-content/uploads/2021/06/45.1-Repto-cal.png" class="card-img-top" alt="Calcio en polvo">
+                        <div class="card-body">
+                            <h5 class="card-title">Suplemento de calcio</h5>
+                            <p class="card-text">
+                                Muchos reptiles requieren polvo de calcio con o sin D3 para fortalecer sus huesos, sobre todo los herbívoros.
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <div style="margin-top: 40px;">
+                <h3>Ubicación de tienda de comida en Costa Rica</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62883.18856056233!2d-84.14911508560182!3d9.917354277402879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e334ba1f041b%3A0x6058384bb2daf604!2sTodoreptilescr!5e0!3m2!1sen!2scr!4v1749209748502!5m2!1sen!2scr" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>

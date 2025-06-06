@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        <div style="display: flex; gap: 20px; padding: 20px;">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQozTkHKmy1G1KwUO7DSfjRKIkfzwr5B7lVfw&s" class="card-img-top" alt="Perro Golden Retriever">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Las aves domésticas como los periquitos, canarios o ninfas son mascotas alegres y coloridas. Disfrutan del canto, la interacción con sus dueños y de un entorno enriquecido. Necesitan una jaula adecuada, una dieta balanceada y momentos diarios de libertad supervisada para mantenerse sanas y felices.
+                        </p>
+                    </div>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XeREKa3rLwc?si=GgqGF-U15dwtqEWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+        </div>
+        <h5>Si desea una vista más al aire libre:</h5>
+        <iframe width="1100" height="400" src="https://www.horizontes.com/es/pajareando-en-la-naturaleza-una-guia-de-los-mejores-lugares-para-observar-aves-en-costa-rica/"></iframe>
+        <footer th:replace="~{layout/plantilla :: footer}"/>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-spiringsecurity6">
+    <head th:fragment="head">
+        <title>Tesoro Salvajes</title>
+        <meta charset="UTF-8"> </meta>
+        <link rel="icon" type="image/png" sizes="16x16.png" href="/fav/favicon-16x16.png"/>
+        <link rel="icon" type="image/png" sizes="32x32.png" href="/fav/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="92x92.png" href="/fav/favicon-92x92.png"/>
+        <link rel="icon" type="image/png" sizes="256x256.png" href="/fav/favicon-256x256.png"/>
+        <link rel="manifest" href="/fav/manifest.json"/>
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <header th:fragment="header" class="header">
+            <nav class="navbar navbar-expand-sm p-0">
+                <div class="container">                    
+                    <a th:href="@{/}" class="navbar-brand">[[#{aplicacion.titulo}]]</a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <ul class="navbar-nav" sec:authorize="hasRole('ROLE_VENDEDOR')">
+                            <li class="nav-item px-2"><a class="nav-link" href="/perros">[[#{plantilla.perros}]]</a></li>
+                            <li class="nav-item px-2"><a class="nav-link" href="/gatos">[[#{plantilla.gatos}]]</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" 
+                                   data-bs-toggle="dropdown" 
+                                   href="#" 
+                                   role="button" 
+                                   aria-expanded="false">[[#{plantilla.reptiles}]]</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/iguanas">[[#{plantilla.iguanas}]]</a></li>
+                                    <li><a class="dropdown-item" href="/serpientes">[[#{plantilla.serpientes}]]</a></li>
+                                    <li><a class="dropdown-item" href="/comida_reptiles">[[#{plantilla.comida_reptiles}]]</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-2"><a class="nav-link" href="/pajaros">[[#{plantilla.pajaros}]]</a></li>
+                            <li class="nav-item px-2"><a class="nav-link" href="/peces">[[#{plantilla.peces}]]</a></li>
+                    </div>
+                </div>
+            </nav>
+            <section id="main-header" class="py-2 bg-success text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1><i class="fa-solid fa-paw"></i> [[#{plantilla.suTienda}]]</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+
+        <footer th:fragment="footer" class="p-2 mt-5 text-white bg-info">
+            <p class="lead text-center">&COPY; [[#{plantilla.derechos}]]</p>
+        </footer>
+    </body>
+</html>
